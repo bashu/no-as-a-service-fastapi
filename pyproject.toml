@@ -1,0 +1,16 @@
+[project]
+name = "no-as-a-service-fastapi"
+version = "1.0.0"
+description = "A lightweight API that returns random rejection or no reasons."
+readme = "README.md"
+authors = [
+    { name = "Basil Sh.", email = "bashu@users.noreply.github.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi[standard]>=0.141.1",
+    "slowapi>=0.1.10",
+]
+
+[tool.fastapi]
+entrypoint = "main:app"

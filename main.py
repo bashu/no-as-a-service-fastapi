@@ -33,6 +33,6 @@ reasons = json.loads((Path(__file__).parent / "reasons.json").read_text(encoding
 
 # Random rejection reason endpoint
 @app.get("/no")
-def no():
+async def no():
     reason = random.choice(reasons)
     return {"reason": reason}
